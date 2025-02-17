@@ -74,9 +74,9 @@ members = [
     "crates/language_selector",
     "crates/language_tools",
     "crates/languages",
+    "crates/livekit_api",
     "crates/livekit_client",
     "crates/livekit_client_macos",
-    "crates/livekit_server",
     "crates/lmstudio",
     "crates/lsp",
     "crates/markdown",
@@ -274,9 +274,9 @@ language_models = { path = "crates/language_models" }
 language_selector = { path = "crates/language_selector" }
 language_tools = { path = "crates/language_tools" }
 languages = { path = "crates/languages" }
+livekit_api = { path = "crates/livekit_api" }
 livekit_client = { path = "crates/livekit_client" }
 livekit_client_macos = { path = "crates/livekit_client_macos" }
-livekit_server = { path = "crates/livekit_server" }
 lmstudio = { path = "crates/lmstudio" }
 lsp = { path = "crates/lsp" }
 markdown = { path = "crates/markdown" }
@@ -364,12 +364,11 @@ zeta = { path = "crates/zeta" }
 #
 
 aho-corasick = "1.1"
-# TODO(#18342): Update to version 0.25 from crates.io when it is released.
-alacritty_terminal = { git = "https://github.com/alacritty/alacritty.git", rev = "5e78d20c709cb1ab8d44ca7a8702cc26d779227c" }
+alacritty_terminal = "0.25"
 any_vec = "0.14"
 anyhow = "1.0.86"
 arrayvec = { version = "0.7.4", features = ["serde"] }
-ashpd = { version = "0.10", default-features = false, features = ["async-std"] }
+ashpd = { version = "0.11", default-features = false, features = ["async-std"] }
 async-compat = "0.2.1"
 async-compression = { version = "0.4", features = ["gzip", "futures-io"] }
 async-dispatcher = "0.1"
